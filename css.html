@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css3</title>
+    <style>
+        /*心形*/
+        .heart{
+             width:160px;
+             height:200px;
+             position:relative;
+             float: left;
+        }
+        .heart:before{
+            content:" ";
+            border: 0 solid transparent;
+            -moz-border-radius:100px;
+            -webkit-border-radius:100px;
+            border-radius:100px 100px 0 0;
+            width:80px;
+            height:120px;
+            background:#669;
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            position:absolute;
+            left:20px;
+        }
+        .heart:after{
+            content:" ";
+            border: 0 solid transparent; 
+            -moz-border-radius:100px;-webkit-border-radius:100px;
+            border-radius:100px 100px 0 0;width:80px;
+            height:120px;
+            background:#669;
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            position:absolute;
+            left:48px;
+            top:0px;
+        }
+        /*消息框*/
+        .oval-pop{
+            width: 200px;
+            height: 100px; 
+            background: #669;
+            -moz-border-radius: 100px / 50px; 
+            -webkit-border-radius: 100px / 50px;
+            border-radius: 100px / 50px;
+            margin-bottom:50px;
+            position:relative;
+            float:left;
+        }
+        .oval-pop:after{
+            content: "";
+            border: 0 solid transparent;
+            border-bottom:30px solid #669;
+            -moz-border-radius:0 0 0 200px;
+            -webkit-border-radius:0 0 0 200px;
+            border-radius:0 0 0 200px;
+            width:50px;height:50px;
+            position:relative;
+            margin-top:20px;
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+             -o-transform: rotate(-90deg);
+             position:absolute;
+             top:50px;
+             left:20px;
+             }
+             .hopper{
+                float: left;
+                border-width: 100px;
+                border-style: solid;
+                border-color: #669 transparent;
+             }
+    </style>
+</head>
+<body>
+    <div class="heart"></div>
+    <div class="oval-pop"></div>
+    <div class="hopper"></div>
+</body>
+</html>
